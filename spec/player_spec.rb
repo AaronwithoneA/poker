@@ -40,7 +40,7 @@ describe 'Player' do
 
   describe '#get_bet_reaction' do
     it "returns :fold, :see, or :raise" do
-      expect([:fold, :see, :raise]).to include(player.get_bet_reaction)
+      expect([:fold, :see, :raise]).to include(player.get_bet_reaction(2))
     end
   end
 
